@@ -21,7 +21,8 @@ class GamePlayer(models.Model):
   user = models.OneToOneField(
     'auth.User',
     on_delete=models.DO_NOTHING,
-    verbose_name=_('Gamer')
+    verbose_name=_('Gamer'),
+    related_name='users'
   )
 
   last_play_date = models.DateTimeField(
