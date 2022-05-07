@@ -1,0 +1,3 @@
+fetch("/tests/games/", {method: "POST", headers: {'Content-Type': 'application/json', "X-CSRFTOKEN": `${window.drf.csrfToken}`}, body: JSON.stringify({"score": 12, "game_positions": "[123, 43]", "gamer": 1})})
+
+fetch("/tests/auth/register/", {method: "POST", headers: {'Content-Type': 'application/json', "X-CSRFTOKEN": `${window.drf.csrfToken}`}, body: JSON.stringify({"username":"AMIR", "password1": "12345", "password2": "12345"})})
